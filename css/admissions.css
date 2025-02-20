@@ -1,0 +1,249 @@
+html,body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* Admission Process Section */
+.admission-process {
+    padding: 5rem 0;
+    background: var(--bg-secondary);
+}
+
+.process-timeline {
+    max-width: 800px;
+    margin: 3rem auto;
+    position: relative;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--theme-dark), var(--theme-main));
+    border-radius: 2px;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--theme-main);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-accent);
+    font-size: 1.5rem;
+    z-index: 1;
+    box-shadow: 0 0 0 6px var(--bg-secondary);
+}
+
+.timeline-content {
+    width: calc(50% - 50px);
+    background: var(--bg-primary);
+    padding: 2rem;
+    border-radius: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+@media (max-width: 768px) {
+    .timeline-content {
+        width: 100%;
+    }
+    .timeline-icon{
+        display: none;
+    }
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: 50px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-right: 50px;
+}
+
+.timeline-content h3 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.requirements {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.requirements li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.requirements li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+/* Application Form */
+.application-form {
+    padding: 5rem 0;
+    background: var(--bg-primary);
+}
+
+.admission-form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--bg-primary);
+    border-radius: 0px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.submit-btn {
+    background: var(--bg-secondary);
+    color: var(--theme-main);
+    padding: 1rem 2rem;
+    border: 2px solid var(--theme-main);
+    border-radius: 0px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: var(--theme-main);
+    color: var(--bg-secondary);
+    transform: translateY(-2px);
+}
+
+/* Fee Structure */
+.fee-structure {
+    padding: 5rem 0;
+    background: var(--bg-secondary);
+}
+
+.fee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.fee-card {
+    background: var(--bg-primary);
+    border-radius: 0px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.fee-card:hover {
+    transform: translateY(-5px);
+}
+
+.fee-card h3 {
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--theme-light);
+}
+
+.fee-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.fee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fee-item:last-child {
+    border-bottom: none;
+}
+
+.fee-item span:first-child {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.fee-item span:last-child {
+    color: var(--theme-main);
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+    .fee-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fee-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .fee-card {
+        margin-bottom: 1rem;
+    }
+} 

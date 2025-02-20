@@ -1,0 +1,146 @@
+/* Mobile styles (up to 767px) */
+@media screen and (max-width: 767px) {
+    /* Show hamburger on mobile */
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Navigation menu */
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--bg-primary);
+        padding-top: 80px;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .nav-links ul li {
+        width: 100%;
+        background: var(--bg-primary);
+    }
+
+    .nav-links ul li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+        padding: 1.2rem 1rem;
+        display: block;
+        width: 100%;
+        color: var(--text-dark);
+        font-weight: 500;
+        transition: all 0.3s ease;
+        background: var(--bg-primary);
+    }
+
+    .nav-links a:hover {
+        background: var(--bg-accent);
+        color: var(--accent-dark);
+    }
+
+    /* Active link state */
+    .nav-links a.active {
+        background: var(--bg-accent);
+        color: var(--theme-dark);
+    }
+
+    /* Ensure header stays on top */
+    header {
+        background: var(--bg-primary);
+        /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    }
+
+    /* Remove the overlay */
+    .nav-links.active::before {
+        display: none;
+    }
+
+    /* Hero section */
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        height: 112vh;
+    }
+
+    /* Features section */
+    .features .container {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    /* Messages Section */
+    .message-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .message-header {
+        padding: 1rem;
+    }
+
+    .message-header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .message-content {
+        padding: 1rem;
+    }
+
+    .messages h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Remove any backdrop filters or transparency */
+    header, .nav-links {
+        /* backdrop-filter: blur(10px); */
+        background: var(--theme-dark);
+    }
+} 

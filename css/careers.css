@@ -1,0 +1,307 @@
+/* Careers Page Styles */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --bg-light: #f8f9fa;
+    --text-dark: #2c3e50;
+    --text-light: #666;
+    --border-color: #ddd;
+    --shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+html,body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* Why Us Section */
+.why-us-section {
+    padding: 4rem 0;
+    background: var(--bg-light);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.benefit-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    color: var(--theme-main);
+    margin-bottom: 1rem;
+}
+
+/* Openings Section */
+.openings-section {
+    padding: 4rem 0;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filters select {
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0px;
+    background: #fff;
+    min-width: 200px;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.job-card {
+    background: #fff;
+    border-radius: 0px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.job-type {
+    background: var(--theme-main);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0px;
+    font-size: 0.9rem;
+}
+
+.job-details {
+    margin-bottom: 1rem;
+}
+
+.job-details p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+/* .apply-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+    background: var(--theme-main);
+} */
+
+/* Process Section */
+.process-section {
+    padding: 4rem 0;
+    background: var(--bg-light);
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.step {
+    text-align: center;
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--theme-main);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+    margin-top: 3rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 1rem;
+    background: var(--theme-main);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.contact-form button:hover {
+    background: var(--theme-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.contact-form button:active {
+    transform: translateY(0);
+}
+
+.contact-form button i {
+    font-size: 1.1rem;
+}
+
+/* Section Title Styles */
+.contact-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .contact-form {
+        margin: 2rem 1rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Load More Button */
+.load-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#loadMoreJobs {
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 2px solid var(--theme-main);
+    color: var(--theme-main);
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#loadMoreJobs:hover {
+    background: var(--theme-main);
+    color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters select {
+        width: 100%;
+    }
+
+    .process-steps {
+        gap: 1rem;
+    }
+
+    .step::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .job-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 0 1rem;
+    }
+} 

@@ -1,0 +1,45 @@
+/* Common responsive styles */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem; */
+}
+
+/* Hamburger menu - hidden on desktop */
+.hamburger {
+    display: none;
+}
+
+/* Add responsive animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.feature-card {
+    animation: slideIn 0.5s ease forwards;
+}
+
+.hero-content {
+    animation: fadeIn 1s ease forwards;
+}

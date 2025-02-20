@@ -1,0 +1,213 @@
+/* Notice Popup Styles */
+.notice-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.notice-content {
+    position: relative;
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.4s ease;
+}
+
+/* Notice Header */
+.notice-header {
+    background: var(--theme-main);
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.notice-header i {
+    font-size: 24px;
+}
+
+.notice-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Close Button */
+.close-notice {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.close-notice:hover {
+    transform: scale(1.1);
+}
+
+/* Notice Body */
+.notice-body {
+    padding: 25px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.notice-title {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.notice-body p {
+    color: #505050;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.notice-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notice-list {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: #505050;
+}
+
+.notice-list:before {
+    content: "•";
+    color: #e74c3c;
+    position: absolute;
+    left: 8px;
+    font-weight: bold;
+}
+
+/* Notice Footer */
+.notice-footer {
+    padding: 15px 25px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 0 0 10px 10px;
+}
+
+.dont-show {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.dont-show input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.notice-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.notice-btn:hover {
+    background: #d44235;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .notice-content {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .notice-header {
+        padding: 15px 20px;
+    }
+
+    .notice-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .notice-body {
+        padding: 20px;
+        max-height: 70vh;
+    }
+
+    .notice-footer {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .notice-btn {
+        width: 100%;
+    }
+}
+
+/* Scrollbar Styling */
+.notice-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.notice-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.notice-body::-webkit-scrollbar-thumb {
+    background: #e74c3c;
+    border-radius: 4px;
+}
+
+.notice-body::-webkit-scrollbar-thumb:hover {
+    background: #d44235;
+} 

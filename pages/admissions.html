@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Rashtriya Secondary School</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/admissions.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">
+                    <!-- <img src="../assets/images/logo.png" alt="School Logo"> -->
+                    <h3 style="font-size: 1.5rem; text-decoration: none; text-transform: uppercase; color:white; cursor: pointer; padding: 3px;">श्री राष्ट्रीय माध्यामिक बिधालय</h3>
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html" class="active">Admissions</a></li>
+                    <li><a href="faculty.html">Faculty Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Admissions</h1>
+            <!-- <nav class="breadcrumb">
+                <a href="../index.html">Home</a> / Admissions
+            </nav> -->
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="admission-process">
+        <div class="container">
+            <h2>Admission Process</h2>
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Step 1: Application</h3>
+                        <p>Submit your application form along with required documents</p>
+                        <ul class="requirements">
+                            <li>Completed application form</li>
+                            <li>Birth certificate</li>
+                            <li>Previous academic records</li>
+                            <li>Passport size photographs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Step 2: Entrance Test</h3>
+                        <p>Take the entrance examination to evaluate academic readiness</p>
+                        <ul class="requirements">
+                            <li>Mathematics</li>
+                            <li>English</li>
+                            <li>General Knowledge</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Step 3: Interview</h3>
+                        <p>Personal interview with student and parents</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Step 4: Admission</h3>
+                        <p>Final selection and fee payment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-form">
+        <div class="container">
+            <h2>Apply Now</h2>
+            <form id="admissionForm" class="admission-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="studentName">Student's Name*</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth*</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="grade">Applying for Grade*</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">Select Grade</option>
+                            <option value="1">Grade 1</option>
+                            <option value="2">Grade 2</option>
+                            <option value="3">Grade 3</option>
+                            <option value="4">Grade 4</option>
+                            <option value="5">Grade 5</option>
+                            <option value="6">Grade 6</option>
+                            <option value="7">Grade 7</option>
+                            <option value="8">Grade 8</option>
+                            <option value="9">Grade 9</option>
+                            <option value="10">Grade 10</option>
+                            <option value="11">Grade 11</option>
+                            <option value="12">Grade 12</option>
+                            <option value="Diploma">Diploma</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="parentName">Parent's Name*</label>
+                        <input type="text" id="parentName" name="parentName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </div>
+                <h4 style="display: block; text-align: center; margin-top: 1rem; color: #000000; font-style: italic;">Note: Please contact us after submitting the application form.</h4>
+            </form>
+        </div>
+    </section>
+
+    <!-- Fee Structure -->
+    <section class="fee-structure">
+        <div class="container">
+            <h2>Fee Structure</h2>
+            <div class="fee-grid">
+                <div class="fee-card">
+                    <h3>Pre - Primary</h3>
+                    <div class="fee-details">
+                        <div class="fee-item">
+                            <span>Admission Fee</span>
+                            <span>Free </span>
+                        </div>
+                        <div class="fee-item">
+                            <span>Tuition Fee (Monthly)</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="fee-item">
+                            <span>Annual Fee</span>
+                            <span>Free</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fee-card">
+                    <h3>Primary (Grade 1-8)</h3>
+                    <div class="fee-details">
+                        <div class="fee-item">
+                            <span>Admission Fee</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="fee-item">
+                            <span>Tuition Fee (Monthly)</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="fee-item">
+                            <span>Lab Fee (Annual)</span>
+                            <span>Free</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fee-card">
+                    <h3>Secondary (Grade 9-12)</h3>
+                    <div class="fee-details">
+                        <div class="fee-item">
+                            <span>Admission Fee</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="fee-item">
+                            <span>Tuition Fee (Monthly)</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="fee-item">
+                            <span>Lab Fee (Annual)</span>
+                            <span>Free</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fee-card">
+                    <h3>Vocational (3 Years Diploma)</h3>
+                    <div class="fee-details">
+                        <div class="fee-item">
+                            <span>Admission Fee</span>
+                            <span>NRs 35000</span>
+                        </div>
+                        <div class="fee-item">
+                            <span>Tuition Fee (Semester)</span>
+                            <span>NRs 30000</span>
+                        </div>
+                        <div class="fee-item">
+                            <span>Lab Fee (Annual)</span>
+                            <span>Included in Tuition Fee</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Shivaraj-05, Chandrauta</p>
+                <p>Kapilvastu, Lumbini Province, Nepal - 32814</p>
+                <p>Phone: (+977) 76-540002</p>
+                <p>Email: info@rashtriyamavi.edu.np</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="notices.html">Notices</a></li>
+                    <li><a href="news-events.html">News and Events</a></li>
+                    <li><a href="resources.html">Parent Resources</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61560529165336"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Shree Rashtriya Secondary School. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    
+    <script src="../js/main.js"></script>
+    <script src="../js/admissions.js"></script>
+</body>
+</html> 

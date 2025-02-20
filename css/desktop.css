@@ -1,0 +1,25 @@
+/* Desktop styles (1024px and above) */
+@media screen and (min-width: 1024px) {
+    .nav-links {
+        display: block !important; /* Always visible on desktop */
+    }
+
+    .nav-links ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .features .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feature-card {
+        width: calc(33.333% - 2rem);
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+} 

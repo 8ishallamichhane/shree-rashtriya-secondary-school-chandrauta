@@ -1,0 +1,27 @@
+/* Tablet styles (768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Hero section */
+    .hero-content {
+        padding: 3rem 2rem;
+    }
+
+    /* Features section */
+    .features .container {
+        /* flex-wrap: wrap; */
+    }
+
+    .feature-card {
+        width: calc(50% - 2rem);
+        margin: 1rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        width: calc(50% - 2rem);
+        margin: 1rem;
+    }
+} 

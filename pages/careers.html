@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - High School Name</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/careers.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="../css/desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (same as other pages) -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">
+                    <!-- <img src="../assets/images/logo.png" alt="School Logo"> -->
+                    <h3 style="font-size: 1.5rem; text-decoration: none; text-transform: uppercase; color:white; cursor: pointer; padding: 3px;">श्री राष्ट्रीय माध्यामिक बिधालय</h3>
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="faculty.html">Faculty Directory</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Join Our Team</h1>
+            <!-- <div class="breadcrumb">
+                <a href="../index.html">Home</a> / Careers
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Why Work With Us -->
+    <section class="why-us-section">
+        <div class="container">
+            <h2>Why Work With Us</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Competitive Benefits</h3>
+                    <p>Comprehensive health insurance, retirement plans, and paid time off</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Professional Growth</h3>
+                    <p>Continuous learning opportunities and career advancement</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Supportive Community</h3>
+                    <p>Collaborative environment with dedicated professionals</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Work-Life Balance</h3>
+                    <p>Flexible schedules and family-friendly policies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Openings -->
+    <!-- <section class="openings-section">
+        <div class="container">
+            <h2>Current Openings</h2>
+            <div class="filters">
+                <select id="departmentFilter">
+                    <option value="all">All Departments</option>
+                    <option value="teaching">Teaching</option>
+                    <option value="administration">Administration</option>
+                    <option value="support">Support Staff</option>
+                </select>
+                <select id="typeFilter">
+                    <option value="all">All Types</option>
+                    <option value="full-time">Full Time</option>
+                    <option value="part-time">Part Time</option>
+                    <option value="temporary">Temporary</option>
+                </select>
+            </div>
+
+            <div class="jobs-grid">
+                <div class="job-card" data-department="teaching" data-type="full-time">
+                    <div class="job-header">
+                        <h3>Mathematics Teacher</h3>
+                        <span class="job-type">Full Time</span>
+                    </div>
+                    <div class="job-details">
+                        <p><i class="fas fa-building"></i> Teaching Department</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Main Campus</p>
+                        <p><i class="fas fa-clock"></i> Posted: March 1, 2024</p>
+                    </div>
+                    <p class="job-description">
+                        Seeking an experienced mathematics teacher for high school level courses...
+                    </p>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+
+            </div>
+
+            <div class="load-more">
+                <button id="loadMoreJobs">Load More Positions</button>
+            </div>
+        </div>
+    </section> -->
+    <section class="openings-section">
+        <div class="container">
+            <h2>Current Openings</h2>
+            <div class="filters">
+                <select id="departmentFilter">
+                    <option value="all">All Departments</option>
+                    <option value="teaching">Teaching</option>
+                    <option value="administration">Administration</option>
+                    <option value="support">Support Staff</option>
+                </select>
+                <select id="typeFilter">
+                    <option value="all">All Types</option>
+                    <option value="full-time">Full Time</option>
+                    <option value="part-time">Part Time</option>
+                    <option value="temporary">Temporary</option>
+                </select>
+            </div>
+    
+            <div class="jobs-grid" id="jobGrid">
+                <!-- Job cards will be populated here dynamically -->
+            </div>
+    
+            <div class="load-more">
+                <button id="loadMoreJobs">Load More Positions</button>
+            </div>
+        </div>
+    </section>
+    <!-- Application Process -->
+    <section class="process-section">
+        <div class="container">
+            <h2>Application Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Submit Application</h3>
+                    <p>Complete online application with required documents</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Initial Review</h3>
+                    <p>Applications reviewed by HR department</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Interview Process</h3>
+                    <p>Multiple rounds of interviews with team members</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Final Decision</h3>
+                    <p>Offer letter and onboarding process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact HR -->
+   <!-- <section class="contact-section">
+        <div class="container">
+            <h2>Questions?</h2>
+            <p>Contact our HR department for any inquiries about our open positions.</p>
+            <div class="contact-form">
+                <form id="hrContactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer (same as other pages) -->
+    <footer>
+        <!-- ... footer content ... -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Shivaraj-05, Chandrauta</p>
+                <p>Kapilvastu, Lumbini Province, Nepal - 32814</p>
+                <p>Phone: (+977) 76-540002</p>
+                <p>Email: info@rashtriyamavi.edu.np</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="notices.html">Notices</a></li>
+                    <li><a href="news-events.html">News and Events</a></li>
+                    <li><a href="resources.html">Parent Resources</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61560529165336"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ShreeRashtriya Secondary School. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="../js/careers.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 
